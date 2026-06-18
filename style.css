@@ -117,13 +117,9 @@ em { font-family: var(--font-serif); font-style: italic; }
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.nav__logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-.logo-fit { color: var(--teal); }
-.logo-sol { color: var(--navy); }
+.nav__logo { display: flex; align-items: center; }
+.nav__logo-img { height: 36px; width: auto; object-fit: contain; }
+.nav__logo-img--invert { filter: brightness(0) invert(1); }
 
 /* ===== HERO ===== */
 .hero {
