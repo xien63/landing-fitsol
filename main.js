@@ -6,7 +6,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   const question = document.getElementById('question').value.trim();
 
   const msg = `Halo, saya ${name} (${phone}).\n\n${question || 'Saya ingin tahu lebih lanjut tentang Fitsol.'}`;
-  const waNumber = '6281234567890'; // TODO: ganti dengan nomor WA aktif
+  const waNumber = '620818638811'; // TODO: ganti dengan nomor WA aktif
   const url = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 });
