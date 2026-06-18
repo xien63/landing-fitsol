@@ -318,7 +318,62 @@ em { font-family: var(--font-serif); font-style: italic; }
   padding: 4px 14px;
   border-radius: 50px;
 }
+.products__intro { text-align: center; color: var(--slate); font-size: 1rem; max-width: 600px; margin: -16px auto 48px; }
 .products__note { text-align: center; color: var(--muted); font-size: 0.88rem; }
+
+/* Product image */
+.product__img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  background: var(--bg-soft);
+  padding: 12px;
+}
+
+/* Routine */
+.routine {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: var(--bg-soft);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+.routine__block {
+  flex: 1;
+  padding: 32px;
+}
+.routine__block--morning { background: linear-gradient(135deg, #FFFBEB, #FEF3C7); }
+.routine__block--evening { background: linear-gradient(135deg, #EFF6FF, #DBEAFE); }
+.routine__divider {
+  width: 1px;
+  background: var(--border);
+  display: flex;
+  align-items: center;
+  color: transparent;
+}
+.routine__time { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+.routine__products { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.routine__pill {
+  background: var(--teal);
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+.routine__pill--mineral { background: #6366F1; }
+.routine__plus { font-weight: 700; color: var(--teal); font-size: 1.1rem; }
+.routine__desc { font-size: 0.88rem; color: var(--slate); line-height: 1.6; }
+
+@media (max-width: 600px) {
+  .routine { flex-direction: column; }
+  .routine__divider { width: 100%; height: 1px; }
+}
 
 /* ===== EDUCATION ===== */
 .education {
